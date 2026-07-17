@@ -3488,3 +3488,10 @@ section {
     height: 48px;
   }
 }
+.type-result__selected-label {
+  margin: 0 0 16px;
+  color: var(--color-red);
+  font-size: 10px;
+  font-weight: 900;
+  letter-spacing: 0.18em;
+}
