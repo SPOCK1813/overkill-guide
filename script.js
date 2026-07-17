@@ -384,13 +384,37 @@ const renderTypeResult = (typeKey) => {
   if (!data) return;
 
   typeCards.forEach((card) => {
-    const isActive =
-      card.dataset.typeCard === typeKey;
+  card.setAttribute(
+    "aria-pressed",
+    "false"
+  );
 
-    card.classList.toggle(
-      "is-active",
-      isActive
+  card.addEventListener("click", () => {
+    renderTypeResult(
+      card.dataset.typeCard
     );
+
+    window.setTimeout(() => {
+      if (!typeResult) return;
+
+      const headerHeight =
+        siteHeader?.offsetHeight || 0;
+
+      const targetTop =
+        typeResult.getBoundingClientRect().top +
+        window.scrollY -
+        headerHeight -
+        18;
+
+      window.scrollTo({
+        top: Math.max(targetTop, 0),
+        behavior: prefersReducedMotion
+          ? "auto"
+          : "smooth"
+      });
+    }, 80);
+  });
+});
 
     card.setAttribute(
       "aria-pressed",
@@ -399,7 +423,11 @@ const renderTypeResult = (typeKey) => {
   });
 
   typeResult.innerHTML = `
-    <div class="type-result__content">
+  <p class="type-result__selected-label">
+    あなたへのおすすめ
+  </p>
+
+  <div class="type-result__content">
       <div
         class="type-result__icon"
         aria-hidden="true"
