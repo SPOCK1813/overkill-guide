@@ -3362,3 +3362,129 @@ p {
     transform: none;
   }
 }
+
+/* =========================================================
+   MOBILE WIDTH FIX ＋ FIXED PAGE TOP
+========================================================= */
+
+/* 横方向へのはみ出しを強制的に防止 */
+html,
+body {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: clip;
+}
+
+body {
+  position: relative;
+}
+
+main,
+header,
+footer,
+section {
+  width: 100%;
+  max-width: 100%;
+}
+
+.hero__inner,
+.section__inner,
+.event-banner__inner,
+.final-cta__inner,
+.site-footer__inner {
+  max-width: 100%;
+}
+
+.hero__content,
+.hero-visual,
+.type-grid,
+.feature-grid,
+.music-grid,
+.member-list,
+.live-layout,
+.benefit-steps,
+.faq-list {
+  min-width: 0;
+}
+
+.hero-visual,
+.placeholder,
+.member-card,
+.music-card,
+.feature-card,
+.type-card {
+  width: 100%;
+  max-width: 100%;
+}
+
+.hero__title-main {
+  max-width: 100%;
+  overflow-wrap: anywhere;
+}
+
+/* 画面右下の「上へ戻る」ボタン */
+.fixed-page-top {
+  position: fixed;
+  right: 18px;
+  bottom: calc(22px + env(safe-area-inset-bottom));
+  z-index: 850;
+
+  display: grid;
+  place-items: center;
+
+  width: 52px;
+  height: 52px;
+
+  color: #ffffff;
+  border: 1px solid rgba(255, 255, 255, 0.22);
+  border-radius: 50%;
+
+  background: rgba(8, 9, 12, 0.78);
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+
+  box-shadow:
+    0 12px 34px rgba(0, 0, 0, 0.4),
+    0 0 24px rgba(255, 51, 77, 0.12);
+
+  font-size: 21px;
+  font-weight: 900;
+
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(15px);
+
+  transition:
+    opacity 0.3s ease,
+    visibility 0.3s ease,
+    transform 0.3s ease,
+    border-color 0.2s ease;
+}
+
+.fixed-page-top.is-visible {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.fixed-page-top:active {
+  transform: scale(0.94);
+}
+
+@media (max-width: 760px) {
+  .hero__inner,
+  .section__inner,
+  .event-banner__inner,
+  .final-cta__inner,
+  .site-footer__inner {
+    width: calc(100% - 32px);
+    max-width: calc(100% - 32px);
+  }
+
+  .fixed-page-top {
+    right: 14px;
+    bottom: calc(16px + env(safe-area-inset-bottom));
+    width: 48px;
+    height: 48px;
+  }
+}
