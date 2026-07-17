@@ -1,0 +1,2254 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1, viewport-fit=cover"
+  >
+
+  <meta
+    name="description"
+    content="初めてO-VER-KiLLを知る人のためのファンメイド入門ガイド。楽曲、メンバー、ライブ、特典会、初心者向け情報をまとめています。"
+  >
+
+  <meta name="theme-color" content="#08090c">
+
+  <meta
+    property="og:title"
+    content="初めてのO-VER-KiLL｜バキル入門ガイド"
+  >
+
+  <meta
+    property="og:description"
+    content="3人組ロックアイドル O-VER-KiLLを知るためのファンメイド入門ガイド。"
+  >
+
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="assets/images/ogp.jpg">
+
+  <title>
+    初めてのO-VER-KiLL｜バキル入門ガイド
+  </title>
+
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+
+  <!-- ========================================
+       ページ読み込み演出
+  ========================================= -->
+  <div class="page-loader" id="pageLoader" aria-hidden="true">
+    <div class="page-loader__inner">
+      <p class="page-loader__logo">
+        O-VER-<span>KiLL</span>
+      </p>
+
+      <div class="page-loader__line">
+        <span></span>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- ========================================
+       背景演出
+  ========================================= -->
+  <div class="site-background" aria-hidden="true">
+    <div class="site-background__glow site-background__glow--red"></div>
+    <div class="site-background__glow site-background__glow--blue"></div>
+    <div class="site-background__noise"></div>
+  </div>
+
+
+  <!-- ========================================
+       固定ヘッダー
+  ========================================= -->
+  <header class="site-header" id="siteHeader">
+
+    <div class="site-header__inner">
+
+      <a
+        href="#top"
+        class="site-logo"
+        aria-label="ページ最上部へ戻る"
+      >
+        O-VER-<span>KiLL</span>
+      </a>
+
+      <nav
+        class="desktop-nav"
+        aria-label="メインナビゲーション"
+      >
+        <a href="#about">バキルとは</a>
+        <a href="#music">楽曲</a>
+        <a href="#members">メンバー</a>
+        <a href="#live">ライブ</a>
+        <a href="#benefits">特典会</a>
+        <a href="#faq">初めての方へ</a>
+      </nav>
+
+      <div class="site-header__actions">
+
+        <button
+          class="header-video-button"
+          type="button"
+          data-video-modal-open
+        >
+          <span class="header-video-button__icon">
+            ▶
+          </span>
+
+          <span class="header-video-button__text">
+            30秒動画
+          </span>
+        </button>
+
+        <button
+          class="menu-button"
+          id="menuButton"
+          type="button"
+          aria-label="メニューを開く"
+          aria-controls="mobileMenu"
+          aria-expanded="false"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+      </div>
+
+    </div>
+
+  </header>
+
+
+  <!-- ========================================
+       スマホメニュー
+  ========================================= -->
+  <div
+    class="mobile-menu"
+    id="mobileMenu"
+    aria-hidden="true"
+  >
+
+    <div class="mobile-menu__inner">
+
+      <p class="mobile-menu__label">
+        MENU
+      </p>
+
+      <nav
+        class="mobile-menu__nav"
+        aria-label="スマートフォン用ナビゲーション"
+      >
+        <a href="#about">
+          <span>01</span>
+          バキルとは
+        </a>
+
+        <a href="#music">
+          <span>02</span>
+          楽曲
+        </a>
+
+        <a href="#members">
+          <span>03</span>
+          メンバー
+        </a>
+
+        <a href="#live">
+          <span>04</span>
+          ライブ
+        </a>
+
+        <a href="#benefits">
+          <span>05</span>
+          特典会
+        </a>
+
+        <a href="#faq">
+          <span>06</span>
+          初めての方へ
+        </a>
+      </nav>
+
+      <button
+        class="button button--primary button--full"
+        type="button"
+        data-video-modal-open
+      >
+        30秒でO-VER-KiLLを見る
+      </button>
+
+    </div>
+
+  </div>
+
+
+  <!-- ========================================
+       メインコンテンツ
+  ========================================= -->
+  <main id="top">
+
+
+    <!-- ======================================
+         ファーストビュー
+    ======================================= -->
+    <section class="hero">
+
+      <div class="hero__inner">
+
+        <div class="hero__content">
+
+          <p
+            class="hero__eyebrow"
+            data-reveal="up"
+          >
+            FIRST GUIDE FOR BEGINNERS
+          </p>
+
+          <h1
+            class="hero__title"
+            data-reveal="up"
+            data-reveal-delay="100"
+          >
+            <span class="hero__title-small">
+              3人組ロックアイドル
+            </span>
+
+            <span class="hero__title-main">
+              O-VER-
+              <strong>KiLL</strong>
+            </span>
+          </h1>
+
+          <p
+            class="hero__nickname"
+            data-reveal="up"
+            data-reveal-delay="180"
+          >
+            通称、
+            <strong>バキル。</strong>
+          </p>
+
+          <p
+            class="hero__description"
+            data-reveal="up"
+            data-reveal-delay="240"
+          >
+            BiSHなどの楽曲制作に携わった
+            松隈ケンタが全曲のサウンドプロデュースを手がける、
+            3人組ロックアイドルグループ。
+          </p>
+
+          <div
+            class="hero__buttons"
+            data-reveal="up"
+            data-reveal-delay="320"
+          >
+
+            <button
+              class="button button--primary"
+              type="button"
+              data-video-modal-open
+            >
+              <span class="button__icon">
+                ▶
+              </span>
+
+              まず30秒で見る
+            </button>
+
+            <a
+              class="button button--secondary"
+              href="#event"
+            >
+              7.31ワンマンを見る
+            </a>
+
+          </div>
+
+          <p
+            class="hero__notice"
+            data-reveal="up"
+            data-reveal-delay="400"
+          >
+            本ページはファン有志による非公式ガイドです。
+            最新情報は公式発信をご確認ください。
+          </p>
+
+        </div>
+
+
+        <!-- メインビジュアル -->
+        <div
+          class="hero-visual"
+          data-reveal="zoom"
+          data-reveal-delay="160"
+        >
+
+          <!--
+            後で画像を配置する場合は、
+            下のpicture全体のコメントアウトを外してください。
+
+            <picture>
+              <source
+                srcset="assets/images/hero.webp"
+                type="image/webp"
+              >
+
+              <img
+                src="assets/images/hero.jpg"
+                alt="O-VER-KiLLの3人"
+                class="hero-visual__image"
+              >
+            </picture>
+          -->
+
+          <div class="placeholder placeholder--hero">
+
+            <div class="placeholder__inner">
+
+              <span class="placeholder__label">
+                MAIN VISUAL
+              </span>
+
+              <strong>
+                3人の集合写真を配置
+              </strong>
+
+              <p>
+                ライブ写真または
+                キービジュアルを推奨
+              </p>
+
+            </div>
+
+          </div>
+
+          <div
+            class="hero-visual__line hero-visual__line--one"
+            aria-hidden="true"
+          ></div>
+
+          <div
+            class="hero-visual__line hero-visual__line--two"
+            aria-hidden="true"
+          ></div>
+
+          <p class="hero-visual__vertical-text">
+            ROCK IDOL GROUP
+          </p>
+
+        </div>
+
+      </div>
+
+      <a
+        href="#event"
+        class="scroll-guide"
+        aria-label="次のセクションへ移動"
+      >
+        <span>SCROLL</span>
+        <i></i>
+      </a>
+
+    </section>
+
+
+    <!-- ======================================
+         7.31 ワンマン告知
+    ======================================= -->
+    <section
+      class="event-banner"
+      id="event"
+    >
+
+      <div class="event-banner__inner">
+
+        <div class="event-banner__date">
+          <span>2026</span>
+          <strong>7.31</strong>
+        </div>
+
+        <div class="event-banner__content">
+
+          <p class="event-banner__label">
+            ONE MAN LIVE
+          </p>
+
+          <h2>
+            O-VER-KiLL
+            2nd Anniversary ONEMAN
+          </h2>
+
+          <p>
+            会場名・開場・開演・料金など、
+            確定情報に差し替えてください。
+          </p>
+
+        </div>
+
+        <a
+          class="button button--ticket"
+          href="TICKET_URL_HERE"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          チケットを見る
+          <span>↗</span>
+        </a>
+
+      </div>
+
+    </section>
+
+
+    <!-- ======================================
+         タイプ別入口
+    ======================================= -->
+    <section
+      class="section section--type"
+      id="type"
+    >
+
+      <div class="section__inner">
+
+        <div class="section-heading">
+
+          <p
+            class="section-heading__eyebrow"
+            data-reveal="up"
+          >
+            CHOOSE YOUR ENTRANCE
+          </p>
+
+          <h2
+            class="section-heading__title"
+            data-reveal="up"
+            data-reveal-delay="100"
+          >
+            あなたは
+            <span>どのタイプ？</span>
+          </h2>
+
+          <p
+            class="section-heading__description"
+            data-reveal="up"
+            data-reveal-delay="180"
+          >
+            気になる入口から、
+            O-VER-KiLLを知ってみてください。
+          </p>
+
+        </div>
+
+
+        <div class="type-grid">
+
+          <button
+            class="type-card"
+            type="button"
+            data-type-card="rock"
+            data-reveal="up"
+          >
+            <span class="type-card__number">
+              01
+            </span>
+
+            <span class="type-card__icon">
+              🎸
+            </span>
+
+            <strong>
+              ロックが好き
+            </strong>
+
+            <p>
+              まずは音と
+              ライブの熱量から。
+            </p>
+
+            <span class="type-card__arrow">
+              →
+            </span>
+          </button>
+
+
+          <button
+            class="type-card"
+            type="button"
+            data-type-card="matsukuma"
+            data-reveal="up"
+            data-reveal-delay="80"
+          >
+            <span class="type-card__number">
+              02
+            </span>
+
+            <span class="type-card__icon">
+              ⚡
+            </span>
+
+            <strong>
+              BiSHや松隈サウンドが好き
+            </strong>
+
+            <p>
+              楽曲の世界観と
+              サウンドから入る。
+            </p>
+
+            <span class="type-card__arrow">
+              →
+            </span>
+          </button>
+
+
+          <button
+            class="type-card"
+            type="button"
+            data-type-card="beginner"
+            data-reveal="up"
+            data-reveal-delay="160"
+          >
+            <span class="type-card__number">
+              03
+            </span>
+
+            <span class="type-card__icon">
+              ✨
+            </span>
+
+            <strong>
+              アイドル初心者
+            </strong>
+
+            <p>
+              ライブや特典会の
+              不安を先に解消。
+            </p>
+
+            <span class="type-card__arrow">
+              →
+            </span>
+          </button>
+
+
+          <button
+            class="type-card"
+            type="button"
+            data-type-card="member"
+            data-reveal="up"
+            data-reveal-delay="240"
+          >
+            <span class="type-card__number">
+              04
+            </span>
+
+            <span class="type-card__icon">
+              📱
+            </span>
+
+            <strong>
+              人やキャラクターから知りたい
+            </strong>
+
+            <p>
+              3人それぞれの
+              個性を動画で。
+            </p>
+
+            <span class="type-card__arrow">
+              →
+            </span>
+          </button>
+
+        </div>
+
+
+        <div
+          class="type-result"
+          id="typeResult"
+          aria-live="polite"
+        >
+          <div class="type-result__default">
+            気になるタイプを選ぶと、
+            おすすめの入口を案内します。
+          </div>
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- ======================================
+         O-VER-KiLLとは
+    ======================================= -->
+    <section
+      class="section section--about"
+      id="about"
+    >
+
+      <div class="section__inner">
+
+        <div class="section-heading">
+
+          <p
+            class="section-heading__eyebrow"
+            data-reveal="up"
+          >
+            WHAT IS O-VER-KiLL?
+          </p>
+
+          <h2
+            class="section-heading__title"
+            data-reveal="up"
+            data-reveal-delay="100"
+          >
+            O-VER-KiLL＝
+            <span>バキルって？</span>
+          </h2>
+
+          <p
+            class="section-heading__description"
+            data-reveal="up"
+            data-reveal-delay="180"
+          >
+            激しいロックサウンド、
+            3人それぞれの歌声と個性、
+            初見でも自然に巻き込まれるライブ。
+            まずは3つの特徴だけ覚えてください。
+          </p>
+
+        </div>
+
+
+        <div class="feature-grid">
+
+          <article
+            class="feature-card"
+            data-reveal="up"
+          >
+
+            <span class="feature-card__number">
+              01
+            </span>
+
+            <div class="feature-card__content">
+
+              <p class="feature-card__label">
+                SOUND
+              </p>
+
+              <h3>
+                全曲サウンドプロデュース
+              </h3>
+
+              <p>
+                松隈ケンタによるロックサウンド。
+                曲ごとに異なる表情があり、
+                聴く入口が多いのも魅力。
+              </p>
+
+            </div>
+
+          </article>
+
+
+          <article
+            class="feature-card"
+            data-reveal="up"
+            data-reveal-delay="100"
+          >
+
+            <span class="feature-card__number">
+              02
+            </span>
+
+            <div class="feature-card__content">
+
+              <p class="feature-card__label">
+                MEMBERS
+              </p>
+
+              <h3>
+                個性の異なる3人組
+              </h3>
+
+              <p>
+                SARiNA、MiYU、KiLUA。
+                歌声、見せ方、キャラクターが違うから、
+                きっと気になる人が見つかる。
+              </p>
+
+            </div>
+
+          </article>
+
+
+          <article
+            class="feature-card"
+            data-reveal="up"
+            data-reveal-delay="200"
+          >
+
+            <span class="feature-card__number">
+              03
+            </span>
+
+            <div class="feature-card__content">
+
+              <p class="feature-card__label">
+                LIVE
+              </p>
+
+              <h3>
+                ライブで完成するグループ
+              </h3>
+
+              <p>
+                見るだけでも、
+                声を出しても自由。
+                動画だけでは伝わりきらない
+                生の熱量がある。
+              </p>
+
+            </div>
+
+          </article>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- ======================================
+         楽曲
+    ======================================= -->
+    <section
+      class="section section--music"
+      id="music"
+    >
+
+      <div class="section__inner">
+
+        <div class="section-heading section-heading--split">
+
+          <div>
+
+            <p
+              class="section-heading__eyebrow"
+              data-reveal="up"
+            >
+              LISTEN FIRST
+            </p>
+
+            <h2
+              class="section-heading__title"
+              data-reveal="up"
+              data-reveal-delay="100"
+            >
+              どんな
+              <span>楽曲があるの？</span>
+            </h2>
+
+          </div>
+
+          <p
+            class="section-heading__description"
+            data-reveal="up"
+            data-reveal-delay="180"
+          >
+            最初に聴いてほしい3曲を掲載。
+            音源だけでなく、
+            ライブ映像も一緒に見るのがおすすめです。
+          </p>
+
+        </div>
+
+
+        <div class="music-grid">
+
+          <!-- 楽曲1 -->
+          <article
+            class="music-card"
+            data-reveal="up"
+          >
+
+            <div class="music-card__media">
+
+              <!--
+                YouTube埋め込み例
+
+                <iframe
+                  src="https://www.youtube.com/embed/動画ID"
+                  title="楽曲タイトル"
+                  loading="lazy"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowfullscreen
+                ></iframe>
+              -->
+
+              <div class="placeholder placeholder--media">
+
+                <div class="placeholder__inner">
+
+                  <span class="placeholder__label">
+                    MUSIC 01
+                  </span>
+
+                  <strong>
+                    YouTube動画を配置
+                  </strong>
+
+                </div>
+
+              </div>
+
+            </div>
+
+            <div class="music-card__content">
+
+              <div class="music-card__meta">
+
+                <span class="tag">
+                  まず聴くなら
+                </span>
+
+                <span class="music-card__index">
+                  01
+                </span>
+
+              </div>
+
+              <h3>
+                曲名を入力
+              </h3>
+
+              <p>
+                曲の魅力、歌詞、サウンド、
+                初見の人におすすめする理由を
+                2〜3行で紹介。
+              </p>
+
+              <div class="music-card__links">
+
+                <a
+                  href="YOUTUBE_URL_1"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  YouTube
+                  <span>↗</span>
+                </a>
+
+                <a
+                  href="SPOTIFY_URL_1"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Spotify
+                  <span>↗</span>
+                </a>
+
+              </div>
+
+            </div>
+
+          </article>
+
+
+          <!-- 楽曲2 -->
+          <article
+            class="music-card"
+            data-reveal="up"
+            data-reveal-delay="100"
+          >
+
+            <div class="music-card__media">
+
+              <div class="placeholder placeholder--media">
+
+                <div class="placeholder__inner">
+
+                  <span class="placeholder__label">
+                    MUSIC 02
+                  </span>
+
+                  <strong>
+                    YouTube動画を配置
+                  </strong>
+
+                </div>
+
+              </div>
+
+            </div>
+
+            <div class="music-card__content">
+
+              <div class="music-card__meta">
+
+                <span class="tag">
+                  ライブで熱い
+                </span>
+
+                <span class="music-card__index">
+                  02
+                </span>
+
+              </div>
+
+              <h3>
+                曲名を入力
+              </h3>
+
+              <p>
+                ライブでどんな楽しみ方ができるか、
+                会場で注目してほしい部分を書く。
+              </p>
+
+              <div class="music-card__links">
+
+                <a
+                  href="YOUTUBE_URL_2"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  YouTube
+                  <span>↗</span>
+                </a>
+
+                <a
+                  href="SPOTIFY_URL_2"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Spotify
+                  <span>↗</span>
+                </a>
+
+              </div>
+
+            </div>
+
+          </article>
+
+
+          <!-- 楽曲3 -->
+          <article
+            class="music-card"
+            data-reveal="up"
+            data-reveal-delay="200"
+          >
+
+            <div class="music-card__media">
+
+              <div class="placeholder placeholder--media">
+
+                <div class="placeholder__inner">
+
+                  <span class="placeholder__label">
+                    MUSIC 03
+                  </span>
+
+                  <strong>
+                    YouTube動画を配置
+                  </strong>
+
+                </div>
+
+              </div>
+
+            </div>
+
+            <div class="music-card__content">
+
+              <div class="music-card__meta">
+
+                <span class="tag">
+                  初見でも聴きやすい
+                </span>
+
+                <span class="music-card__index">
+                  03
+                </span>
+
+              </div>
+
+              <h3>
+                曲名を入力
+              </h3>
+
+              <p>
+                歌声や雰囲気、
+                他の2曲との違いが伝わる紹介文を書く。
+              </p>
+
+              <div class="music-card__links">
+
+                <a
+                  href="YOUTUBE_URL_3"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  YouTube
+                  <span>↗</span>
+                </a>
+
+                <a
+                  href="SPOTIFY_URL_3"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Spotify
+                  <span>↗</span>
+                </a>
+
+              </div>
+
+            </div>
+
+          </article>
+
+        </div>
+
+
+        <div
+          class="music-service-links"
+          data-reveal="up"
+        >
+
+          <p>
+            他の楽曲も聴いてみる
+          </p>
+
+          <div>
+
+            <a
+              href="OFFICIAL_YOUTUBE_URL"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              YouTube
+            </a>
+
+            <a
+              href="OFFICIAL_SPOTIFY_URL"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Spotify
+            </a>
+
+            <a
+              href="OFFICIAL_APPLE_MUSIC_URL"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Apple Music
+            </a>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- ======================================
+         メンバー
+    ======================================= -->
+    <section
+      class="section section--members"
+      id="members"
+    >
+
+      <div class="section__inner">
+
+        <div class="section-heading">
+
+          <p
+            class="section-heading__eyebrow"
+            data-reveal="up"
+          >
+            MEET THE MEMBERS
+          </p>
+
+          <h2
+            class="section-heading__title"
+            data-reveal="up"
+            data-reveal-delay="100"
+          >
+            どんな
+            <span>3人？</span>
+          </h2>
+
+          <p
+            class="section-heading__description"
+            data-reveal="up"
+            data-reveal-delay="180"
+          >
+            歌声も、表情も、キャラクターも違う3人。
+            TikTokやShortsと一緒に紹介します。
+          </p>
+
+        </div>
+
+
+        <div class="member-list">
+
+          <!-- SARiNA -->
+          <article
+            class="member-card member-card--sarina"
+            data-member="sarina"
+            data-reveal="up"
+          >
+
+            <div class="member-card__visual">
+
+              <!--
+                後で写真を入れる場合
+
+                <img
+                  src="assets/images/sarina.jpg"
+                  alt="SARiNA"
+                >
+              -->
+
+              <div class="placeholder placeholder--member">
+
+                <div class="placeholder__inner">
+
+                  <span class="placeholder__label">
+                    SARiNA PHOTO
+                  </span>
+
+                  <strong>
+                    SARiNAの写真を配置
+                  </strong>
+
+                </div>
+
+              </div>
+
+            </div>
+
+            <div class="member-card__content">
+
+              <div class="member-card__heading">
+
+                <div>
+
+                  <p class="member-card__color">
+                    GREEN
+                  </p>
+
+                  <h3>
+                    SARiNA
+                  </h3>
+
+                </div>
+
+                <span class="member-card__number">
+                  01
+                </span>
+
+              </div>
+
+              <p class="member-card__catch">
+                キャッチコピーを入力
+              </p>
+
+              <p class="member-card__description">
+                歌声、性格、ライブでの役割、
+                初見に見てほしいポイントを紹介。
+              </p>
+
+              <ul class="member-card__points">
+                <li>特徴や役割</li>
+                <li>ライブでの見どころ</li>
+                <li>おすすめ動画の内容</li>
+              </ul>
+
+              <div class="member-card__video">
+
+                <div class="placeholder placeholder--vertical">
+
+                  <div class="placeholder__inner">
+
+                    <span class="placeholder__label">
+                      TikTok / SHORTS
+                    </span>
+
+                    <strong>
+                      SARiNA動画
+                    </strong>
+
+                  </div>
+
+                </div>
+
+              </div>
+
+              <a
+                class="member-card__link"
+                href="SARINA_TIKTOK_URL"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                SARiNAの動画を見る
+                <span>↗</span>
+              </a>
+
+            </div>
+
+          </article>
+
+
+          <!-- MiYU -->
+          <article
+            class="member-card member-card--miyu"
+            data-member="miyu"
+            data-reveal="up"
+          >
+
+            <div class="member-card__visual">
+
+              <div class="placeholder placeholder--member">
+
+                <div class="placeholder__inner">
+
+                  <span class="placeholder__label">
+                    MiYU PHOTO
+                  </span>
+
+                  <strong>
+                    MiYUの写真を配置
+                  </strong>
+
+                </div>
+
+              </div>
+
+            </div>
+
+            <div class="member-card__content">
+
+              <div class="member-card__heading">
+
+                <div>
+
+                  <p class="member-card__color">
+                    BLUE
+                  </p>
+
+                  <h3>
+                    MiYU
+                  </h3>
+
+                </div>
+
+                <span class="member-card__number">
+                  02
+                </span>
+
+              </div>
+
+              <p class="member-card__catch">
+                キャッチコピーを入力
+              </p>
+
+              <p class="member-card__description">
+                歌声、性格、ライブでの役割、
+                初見に見てほしいポイントを紹介。
+              </p>
+
+              <ul class="member-card__points">
+                <li>特徴や役割</li>
+                <li>ライブでの見どころ</li>
+                <li>おすすめ動画の内容</li>
+              </ul>
+
+              <div class="member-card__video">
+
+                <div class="placeholder placeholder--vertical">
+
+                  <div class="placeholder__inner">
+
+                    <span class="placeholder__label">
+                      TikTok / SHORTS
+                    </span>
+
+                    <strong>
+                      MiYU動画
+                    </strong>
+
+                  </div>
+
+                </div>
+
+              </div>
+
+              <a
+                class="member-card__link"
+                href="MIYU_TIKTOK_URL"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                MiYUの動画を見る
+                <span>↗</span>
+              </a>
+
+            </div>
+
+          </article>
+
+
+          <!-- KiLUA -->
+          <article
+            class="member-card member-card--kilua"
+            data-member="kilua"
+            data-reveal="up"
+          >
+
+            <div class="member-card__visual">
+
+              <div class="placeholder placeholder--member">
+
+                <div class="placeholder__inner">
+
+                  <span class="placeholder__label">
+                    KiLUA PHOTO
+                  </span>
+
+                  <strong>
+                    KiLUAの写真を配置
+                  </strong>
+
+                </div>
+
+              </div>
+
+            </div>
+
+            <div class="member-card__content">
+
+              <div class="member-card__heading">
+
+                <div>
+
+                  <p class="member-card__color">
+                    RED
+                  </p>
+
+                  <h3>
+                    KiLUA
+                  </h3>
+
+                </div>
+
+                <span class="member-card__number">
+                  03
+                </span>
+
+              </div>
+
+              <p class="member-card__catch">
+                キャッチコピーを入力
+              </p>
+
+              <p class="member-card__description">
+                歌声、性格、ライブでの役割、
+                初見に見てほしいポイントを紹介。
+              </p>
+
+              <ul class="member-card__points">
+                <li>特徴や役割</li>
+                <li>ライブでの見どころ</li>
+                <li>おすすめ動画の内容</li>
+              </ul>
+
+              <div class="member-card__video">
+
+                <div class="placeholder placeholder--vertical">
+
+                  <div class="placeholder__inner">
+
+                    <span class="placeholder__label">
+                      TikTok / SHORTS
+                    </span>
+
+                    <strong>
+                      KiLUA動画
+                    </strong>
+
+                  </div>
+
+                </div>
+
+              </div>
+
+              <a
+                class="member-card__link"
+                href="KILUA_TIKTOK_URL"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                KiLUAの動画を見る
+                <span>↗</span>
+              </a>
+
+            </div>
+
+          </article>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- ======================================
+         ライブ
+    ======================================= -->
+    <section
+      class="section section--live"
+      id="live"
+    >
+
+      <div class="section__inner">
+
+        <div class="section-heading section-heading--split">
+
+          <div>
+
+            <p
+              class="section-heading__eyebrow"
+              data-reveal="up"
+            >
+              LIVE EXPERIENCE
+            </p>
+
+            <h2
+              class="section-heading__title"
+              data-reveal="up"
+              data-reveal-delay="100"
+            >
+              ライブは
+              <span>どんな感じ？</span>
+            </h2>
+
+          </div>
+
+          <p
+            class="section-heading__description"
+            data-reveal="up"
+            data-reveal-delay="180"
+          >
+            激しいだけじゃない。
+            初めてでも自分のペースで楽しめます。
+          </p>
+
+        </div>
+
+
+        <div class="live-layout">
+
+          <div
+            class="live-movie"
+            data-reveal="zoom"
+          >
+
+            <!--
+              後でYouTubeまたは動画を埋め込む
+
+              <iframe
+                src="https://www.youtube.com/embed/動画ID"
+                title="O-VER-KiLL ライブ映像"
+                loading="lazy"
+                allowfullscreen
+              ></iframe>
+            -->
+
+            <div class="placeholder placeholder--live">
+
+              <div class="placeholder__inner">
+
+                <span class="placeholder__label">
+                  LIVE MOVIE
+                </span>
+
+                <strong>
+                  フロア全体の動画を配置
+                </strong>
+
+                <p>
+                  3人のパフォーマンスと
+                  会場の雰囲気が分かる映像
+                </p>
+
+              </div>
+
+            </div>
+
+          </div>
+
+
+          <div
+            class="live-guide"
+            data-reveal="up"
+            data-reveal-delay="120"
+          >
+
+            <p class="live-guide__label">
+              FIRST TIME?
+            </p>
+
+            <h3>
+              楽しみ方は、
+              <span>自由。</span>
+            </h3>
+
+            <p class="live-guide__description">
+              最初からコールや振りを
+              覚える必要はありません。
+              後ろで見るだけでも、
+              音に乗るだけでも大丈夫です。
+            </p>
+
+            <ul class="check-list">
+
+              <li>
+                <span>✓</span>
+                コールが分からなくてもOK
+              </li>
+
+              <li>
+                <span>✓</span>
+                一人参加でもOK
+              </li>
+
+              <li>
+                <span>✓</span>
+                後ろでゆっくり見てもOK
+              </li>
+
+              <li>
+                <span>✓</span>
+                声を出さなくてもOK
+              </li>
+
+              <li>
+                <span>✓</span>
+                自分のペースで参加してOK
+              </li>
+
+            </ul>
+
+            <a
+              class="text-link"
+              href="#faq"
+            >
+              初めてのライブQ&amp;Aを見る
+              <span>↓</span>
+            </a>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- ======================================
+         特典会
+    ======================================= -->
+    <section
+      class="section section--benefits"
+      id="benefits"
+    >
+
+      <div class="section__inner">
+
+        <div class="section-heading">
+
+          <p
+            class="section-heading__eyebrow"
+            data-reveal="up"
+          >
+            AFTER THE SHOW
+          </p>
+
+          <h2
+            class="section-heading__title"
+            data-reveal="up"
+            data-reveal-delay="100"
+          >
+            特典会って
+            <span>何をするの？</span>
+          </h2>
+
+          <p
+            class="section-heading__description"
+            data-reveal="up"
+            data-reveal-delay="180"
+          >
+            ライブ後にメンバーと話したり、
+            チェキを撮ったりできる時間です。
+            初めてでもスタッフが案内してくれます。
+          </p>
+
+        </div>
+
+
+        <div class="benefit-steps">
+
+          <article
+            class="benefit-step"
+            data-reveal="up"
+          >
+
+            <span class="benefit-step__number">
+              STEP 01
+            </span>
+
+            <div class="benefit-step__icon">
+              01
+            </div>
+
+            <h3>
+              特典券を購入
+            </h3>
+
+            <p>
+              販売場所、価格、
+              支払い方法などを記載。
+            </p>
+
+          </article>
+
+
+          <article
+            class="benefit-step"
+            data-reveal="up"
+            data-reveal-delay="100"
+          >
+
+            <span class="benefit-step__number">
+              STEP 02
+            </span>
+
+            <div class="benefit-step__icon">
+              02
+            </div>
+
+            <h3>
+              メンバー列に並ぶ
+            </h3>
+
+            <p>
+              分からない場合は
+              スタッフに聞けば大丈夫。
+            </p>
+
+          </article>
+
+
+          <article
+            class="benefit-step"
+            data-reveal="up"
+            data-reveal-delay="200"
+          >
+
+            <span class="benefit-step__number">
+              STEP 03
+            </span>
+
+            <div class="benefit-step__icon">
+              03
+            </div>
+
+            <h3>
+              チェキ＆トーク
+            </h3>
+
+            <p>
+              写真を撮って、
+              メンバーと少し話せます。
+            </p>
+
+          </article>
+
+        </div>
+
+
+        <div
+          class="benefit-current"
+          data-reveal="up"
+        >
+
+          <div>
+
+            <p class="benefit-current__label">
+              CURRENT BENEFITS
+            </p>
+
+            <h3>
+              現在の特典会内容
+            </h3>
+
+          </div>
+
+          <div class="benefit-current__content">
+
+            <p>
+              ここに現在の特典券価格、
+              チェキ内容、
+              トーク時間などを記載。
+            </p>
+
+            <p class="benefit-current__notice">
+              内容・価格は変更される可能性があります。
+              最新情報は公式Xまたは当日の案内をご確認ください。
+            </p>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- ======================================
+         初めての方へ
+    ======================================= -->
+    <section
+      class="section section--faq"
+      id="faq"
+    >
+
+      <div class="section__inner">
+
+        <div class="section-heading">
+
+          <p
+            class="section-heading__eyebrow"
+            data-reveal="up"
+          >
+            FIRST TIME GUIDE
+          </p>
+
+          <h2
+            class="section-heading__title"
+            data-reveal="up"
+            data-reveal-delay="100"
+          >
+            新規でも
+            <span>入りやすい？</span>
+          </h2>
+
+          <p
+            class="section-heading__description"
+            data-reveal="up"
+            data-reveal-delay="180"
+          >
+            ファン同士が固まって見えるかもしれませんが、
+            新しく来てくれる人はかなりウェルカム。
+            最初から輪に入る必要もありません。
+          </p>
+
+        </div>
+
+
+        <div class="faq-list">
+
+          <details
+            class="faq-item"
+            open
+            data-reveal="up"
+          >
+
+            <summary>
+              <span class="faq-item__question">
+                Q
+              </span>
+
+              一人で行っても大丈夫？
+
+              <span class="faq-item__icon">
+                ＋
+              </span>
+            </summary>
+
+            <div class="faq-item__answer">
+
+              <span>
+                A
+              </span>
+
+              <p>
+                大丈夫です。
+                一人で参加している人もいます。
+                まずは自分の見やすい場所で、
+                ライブだけ楽しむ形でも問題ありません。
+              </p>
+
+            </div>
+
+          </details>
+
+
+          <details
+            class="faq-item"
+            data-reveal="up"
+          >
+
+            <summary>
+              <span class="faq-item__question">
+                Q
+              </span>
+
+              コールや振りが分かりません。
+
+              <span class="faq-item__icon">
+                ＋
+              </span>
+            </summary>
+
+            <div class="faq-item__answer">
+
+              <span>
+                A
+              </span>
+
+              <p>
+                知らなくてもまったく問題ありません。
+                周りを見ながら少しずつ参加しても、
+                最後まで見ているだけでも楽しめます。
+              </p>
+
+            </div>
+
+          </details>
+
+
+          <details
+            class="faq-item"
+            data-reveal="up"
+          >
+
+            <summary>
+              <span class="faq-item__question">
+                Q
+              </span>
+
+              常連ファンの輪に入らないとダメ？
+
+              <span class="faq-item__icon">
+                ＋
+              </span>
+            </summary>
+
+            <div class="faq-item__answer">
+
+              <span>
+                A
+              </span>
+
+              <p>
+                入る必要はありません。
+                話してみたいと思った時に、
+                自分のタイミングで声をかければ大丈夫です。
+              </p>
+
+            </div>
+
+          </details>
+
+
+          <details
+            class="faq-item"
+            data-reveal="up"
+          >
+
+            <summary>
+              <span class="faq-item__question">
+                Q
+              </span>
+
+              特典会が初めてで不安です。
+
+              <span class="faq-item__icon">
+                ＋
+              </span>
+            </summary>
+
+            <div class="faq-item__answer">
+
+              <span>
+                A
+              </span>
+
+              <p>
+                スタッフへ
+                「初めてです」と伝えれば大丈夫です。
+                券の買い方や並ぶ場所を案内してもらえます。
+              </p>
+
+            </div>
+
+          </details>
+
+
+          <details
+            class="faq-item"
+            data-reveal="up"
+          >
+
+            <summary>
+              <span class="faq-item__question">
+                Q
+              </span>
+
+              どの曲から覚えればいい？
+
+              <span class="faq-item__icon">
+                ＋
+              </span>
+            </summary>
+
+            <div class="faq-item__answer">
+
+              <span>
+                A
+              </span>
+
+              <p>
+                最初は1曲だけで十分です。
+                このページのおすすめ曲から、
+                気になる曲を1つ見つけてみてください。
+              </p>
+
+            </div>
+
+          </details>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- ======================================
+         最後の導線
+    ======================================= -->
+    <section class="final-cta">
+
+      <div class="final-cta__inner">
+
+        <p
+          class="final-cta__eyebrow"
+          data-reveal="up"
+        >
+          THE BEST WAY IS LIVE
+        </p>
+
+        <h2
+          data-reveal="up"
+          data-reveal-delay="100"
+        >
+          気になったら、
+          <span>次はライブへ。</span>
+        </h2>
+
+        <p
+          class="final-cta__description"
+          data-reveal="up"
+          data-reveal-delay="180"
+        >
+          動画で気になった瞬間が
+          一つでもあったなら、
+          生のO-VER-KiLLを
+          一度見てみてください。
+        </p>
+
+        <div
+          class="final-cta__buttons"
+          data-reveal="up"
+          data-reveal-delay="260"
+        >
+
+          <a
+            class="button button--primary"
+            href="TICKET_URL_HERE"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            7.31ワンマンのチケット
+          </a>
+
+          <a
+            class="button button--secondary"
+            href="OFFICIAL_SCHEDULE_URL"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            最新ライブ予定
+          </a>
+
+        </div>
+
+
+        <div
+          class="social-links"
+          data-reveal="up"
+          data-reveal-delay="340"
+        >
+
+          <a
+            href="OFFICIAL_X_URL"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            X
+            <span>↗</span>
+          </a>
+
+          <a
+            href="OFFICIAL_TIKTOK_URL"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            TikTok
+            <span>↗</span>
+          </a>
+
+          <a
+            href="OFFICIAL_YOUTUBE_URL"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            YouTube
+            <span>↗</span>
+          </a>
+
+          <a
+            href="OFFICIAL_SPOTIFY_URL"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Spotify
+            <span>↗</span>
+          </a>
+
+          <a
+            href="OFFICIAL_SITE_URL"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Official
+            <span>↗</span>
+          </a>
+
+        </div>
+
+      </div>
+
+    </section>
+
+  </main>
+
+
+  <!-- ========================================
+       フッター
+  ========================================= -->
+  <footer class="site-footer">
+
+    <div class="site-footer__inner">
+
+      <a
+        href="#top"
+        class="site-footer__logo"
+      >
+        O-VER-<span>KiLL</span>
+      </a>
+
+      <p>
+        FAN-MADE BEGINNER'S GUIDE
+      </p>
+
+      <p class="site-footer__notice">
+        本ページはファン有志による非公式ガイドです。
+        掲載素材・リンクは権利者のルールに従って使用してください。
+      </p>
+
+      <a
+        href="#top"
+        class="page-top"
+        aria-label="ページ最上部へ戻る"
+      >
+        ↑
+      </a>
+
+    </div>
+
+  </footer>
+
+
+  <!-- ========================================
+       動画ポップアップ
+  ========================================= -->
+  <div
+    class="video-modal"
+    id="videoModal"
+    aria-hidden="true"
+  >
+
+    <div
+      class="video-modal__dialog"
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="videoModalTitle"
+    >
+
+      <button
+        class="video-modal__close"
+        type="button"
+        aria-label="動画を閉じる"
+        data-video-modal-close
+      >
+        ×
+      </button>
+
+      <div class="video-modal__heading">
+
+        <p>
+          30 SEC INTRODUCTION
+        </p>
+
+        <h2 id="videoModalTitle">
+          30秒でわかる
+          O-VER-KiLL
+        </h2>
+
+      </div>
+
+
+      <div
+        class="video-modal__media"
+        id="videoModalMedia"
+      >
+
+        <!--
+          後でMP4を配置する場合
+
+          <video
+            id="introVideo"
+            src="assets/videos/overkill-intro.mp4"
+            playsinline
+            muted
+            controls
+            preload="metadata"
+          ></video>
+        -->
+
+        <!--
+          YouTubeを使う場合
+
+          <iframe
+            id="introVideoIframe"
+            src="https://www.youtube.com/embed/動画ID?autoplay=1&mute=1"
+            title="30秒でわかるO-VER-KiLL"
+            allow="autoplay; encrypted-media; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+        -->
+
+        <div class="placeholder placeholder--modal">
+
+          <div class="placeholder__inner">
+
+            <span class="placeholder__label">
+              30 SEC MOVIE
+            </span>
+
+            <strong>
+              後で30秒動画を配置
+            </strong>
+
+            <p>
+              フロア
+              →
+              SARiNA
+              →
+              MiYU
+              →
+              KiLUA
+              →
+              全体
+              →
+              7.31ワンマン
+            </p>
+
+          </div>
+
+        </div>
+
+      </div>
+
+
+      <div class="video-modal__footer">
+
+        <p>
+          ×で閉じられます。
+          閉じた後もヘッダーから再生できます。
+        </p>
+
+        <a
+          href="#event"
+          class="video-modal__event-link"
+          data-video-modal-close
+        >
+          7.31ワンマンを見る
+          <span>↓</span>
+        </a>
+
+      </div>
+
+    </div>
+
+  </div>
+
+
+  <!-- ========================================
+       JavaScript無効時
+  ========================================= -->
+  <noscript>
+
+    <div class="noscript-message">
+      このページの一部機能を利用するには、
+      JavaScriptを有効にしてください。
+    </div>
+
+  </noscript>
+
+</body>
+</html>
