@@ -876,3 +876,29 @@ document.documentElement.classList.add(
 console.info(
   "O-VER-KiLL Beginner Guide loaded."
 );
+
+/* =========================================================
+   15. FIXED PAGE TOP BUTTON
+========================================================= */
+
+const fixedPageTop =
+  document.getElementById("fixedPageTop");
+
+const updateFixedPageTop = () => {
+  if (!fixedPageTop) return;
+
+  fixedPageTop.classList.toggle(
+    "is-visible",
+    window.scrollY > 500
+  );
+};
+
+window.addEventListener(
+  "scroll",
+  updateFixedPageTop,
+  {
+    passive: true
+  }
+);
+
+updateFixedPageTop();
