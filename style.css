@@ -3568,6 +3568,15 @@ section {
   backdrop-filter: blur(14px);
   -webkit-backdrop-filter: blur(14px);
 }
+.hero__event small {
+  display: block;
+  color: var(--color-red);
+  font-size: 12px;
+  font-weight: 900;
+  letter-spacing: 0.18em;
+  margin-bottom: 8px;
+  text-transform: uppercase;
+}
 
 .hero__event span {
   color: var(--color-red);
