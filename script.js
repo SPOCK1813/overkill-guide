@@ -873,8 +873,8 @@ placeholderLinks.forEach((link) => {
       link.getAttribute("href") || "";
 
     const isPlaceholder =
-      href.includes("_URL") ||
-      href.includes("_HERE");
+  href === "TICKET_URL_HERE" ||
+  href === "OFFICIAL_SCHEDULE_URL";
 
     if (!isPlaceholder) return;
 
