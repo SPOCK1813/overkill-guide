@@ -867,24 +867,7 @@ const placeholderLinks =
     `
   );
 
-placeholderLinks.forEach((link) => {
-  link.addEventListener("click", (event) => {
-    const href =
-      link.getAttribute("href") || "";
 
-    const isPlaceholder =
-  href === "TICKET_URL_HERE" ||
-  href === "OFFICIAL_SCHEDULE_URL";
-
-    if (!isPlaceholder) return;
-
-    event.preventDefault();
-
-    window.alert(
-      "このリンクは、あとで実際のURLへ差し替えます。"
-    );
-  });
-});
 
 
 /* =========================================================
