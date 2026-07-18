@@ -3495,3 +3495,134 @@ section {
   font-weight: 900;
   letter-spacing: 0.18em;
 }
+/* =========================================================
+   HERO BACKGROUND PHOTO
+========================================================= */
+
+.hero {
+  position: relative;
+  display: grid;
+  align-items: end;
+  min-height: 100svh;
+  padding:
+    calc(var(--header-height) + 90px)
+    0
+    90px;
+  overflow: hidden;
+  background: #050609;
+}
+
+.hero__background {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+}
+
+.hero__background-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+  transform: scale(1.02);
+}
+
+.hero__background-overlay {
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(
+      90deg,
+      rgba(5, 6, 9, 0.96) 0%,
+      rgba(5, 6, 9, 0.82) 38%,
+      rgba(5, 6, 9, 0.28) 72%,
+      rgba(5, 6, 9, 0.12) 100%
+    ),
+    linear-gradient(
+      180deg,
+      rgba(5, 6, 9, 0.15) 0%,
+      rgba(5, 6, 9, 0.18) 52%,
+      rgba(5, 6, 9, 0.92) 100%
+    );
+}
+
+.hero__inner {
+  position: relative;
+  z-index: 2;
+  display: block;
+}
+
+.hero__content {
+  max-width: 700px;
+}
+
+.hero__event {
+  display: grid;
+  gap: 4px;
+  width: fit-content;
+  margin-bottom: 28px;
+  padding: 14px 18px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 14px;
+  background: rgba(5, 6, 9, 0.42);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+}
+
+.hero__event span {
+  color: var(--color-red);
+  font-size: 11px;
+  font-weight: 900;
+  letter-spacing: 0.16em;
+}
+
+.hero__event strong {
+  color: #fff;
+  font-size: 14px;
+  letter-spacing: 0.04em;
+}
+
+.hero-visual {
+  display: none;
+}
+
+@media (max-width: 760px) {
+  .hero {
+    min-height: 100svh;
+    padding:
+      calc(var(--header-height) + 110px)
+      0
+      70px;
+    align-items: end;
+  }
+
+  .hero__background-image {
+    object-position: 58% top;
+  }
+
+  .hero__background-overlay {
+    background:
+      linear-gradient(
+        180deg,
+        rgba(5, 6, 9, 0.04) 0%,
+        rgba(5, 6, 9, 0.2) 32%,
+        rgba(5, 6, 9, 0.72) 58%,
+        rgba(5, 6, 9, 0.98) 100%
+      );
+  }
+
+  .hero__content {
+    max-width: 100%;
+  }
+
+  .hero__title-main {
+    font-size: clamp(50px, 16vw, 76px);
+  }
+
+  .hero__description {
+    max-width: 95%;
+  }
+
+  .hero__event {
+    margin-bottom: 22px;
+  }
+}
