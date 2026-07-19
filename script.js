@@ -342,9 +342,9 @@ const typeData = {
     icon: "🎸",
     title: "ロックが好きなあなたへ",
     text:
-      "まずはおすすめ楽曲とライブ映像へ。音の重さ、歌声、会場の熱量からO-VER-KiLLを知るのがおすすめです。",
-    linkText: "おすすめ楽曲を見る",
-    target: "#music"
+      "まずはライブ映像で、O-VER-KiLLの熱量と圧倒的なパフォーマンスを体感してみてください。",
+    linkText: "ライブ映像を見る",
+    target: "#live"
   },
 
   matsukuma: {
