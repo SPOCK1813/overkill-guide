@@ -2017,6 +2017,7 @@ p {
   content: "";
   width: 8px;
   height: 8px;
+   margin-top: 5px;
   border-radius: 50%;
   background: var(--member-color);
   box-shadow: 0 0 18px var(--member-color);
