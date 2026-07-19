@@ -1991,11 +1991,25 @@ p {
 }
 
 .member-card__points li {
-  display: flex;
-  align-items: center;
-  gap: 12px;
+  display: grid;
+  grid-template-columns: 8px 1fr;
+  column-gap: 12px;
+  row-gap: 6px;
+  align-items: start;
   color: var(--color-text);
   font-size: 13px;
+  font-weight: 700;
+}
+
+.member-card__points li strong {
+  grid-column: 2;
+  display: block;
+}
+
+.member-card__points li p {
+  grid-column: 2;
+  margin: 0;
+  line-height: 1.7;
   font-weight: 700;
 }
 
