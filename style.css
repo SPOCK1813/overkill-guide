@@ -1470,25 +1470,26 @@ p {
 .type-result__icon {
   display: grid;
   place-items: center;
-  width: 58px;
-  height: 58px;
+  width: 72px;
+  height: 72px;
   border: 1px solid var(--color-line);
   border-radius: 50%;
   background: rgba(255, 255, 255, 0.05);
-  font-size: 24px;
+  font-size: 38px;
 }
 
 .type-result__text strong {
   display: block;
   margin-bottom: 5px;
   color: var(--color-white);
-  font-size: 18px;
+  font-size: 22px;
 }
 
 .type-result__text p {
   margin-bottom: 0;
   color: var(--color-text-soft);
-  font-size: 13px;
+  font-size: 15px;
+   line-height: 1.8;
 }
 
 .type-result__link {
