@@ -2157,7 +2157,7 @@ p {
   width:100%;
   max-width:320px;
   min-height:56px;
-  margin-top:24px;
+  margin:24px auto 56px;
   padding:14px 24px;
   border-radius:999px;
 
