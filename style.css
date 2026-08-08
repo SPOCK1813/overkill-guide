@@ -3705,3 +3705,71 @@ section {
     margin-bottom: 22px;
   }
 }
+
+/* =========================
+   スマホ下部固定ナビ
+========================= */
+
+.bottom-nav{
+  position:fixed;
+  left:0;
+  right:0;
+  bottom:0;
+  z-index:1000;
+
+  display:grid;
+  grid-template-columns:repeat(5,1fr);
+
+  background:rgba(8,9,12,.94);
+  backdrop-filter:blur(16px);
+  -webkit-backdrop-filter:blur(16px);
+
+  border-top:1px solid rgba(255,255,255,.12);
+
+  padding:7px 6px calc(7px + env(safe-area-inset-bottom));
+}
+
+.bottom-nav a{
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  gap:3px;
+
+  min-height:48px;
+
+  color:rgba(255,255,255,.72);
+  text-decoration:none;
+
+  font-size:11px;
+  line-height:1;
+}
+
+.bottom-nav__icon{
+  font-size:20px;
+  line-height:1;
+}
+
+.bottom-nav a:active{
+  color:#ff2f6d;
+}
+
+.bottom-nav__label{
+  white-space:nowrap;
+}
+
+/* 固定ナビで最下部が隠れないようにする */
+body{
+  padding-bottom:calc(72px + env(safe-area-inset-bottom));
+}
+
+/* PCでは非表示 */
+@media (min-width:769px){
+  .bottom-nav{
+    display:none;
+  }
+
+  body{
+    padding-bottom:0;
+  }
+}
